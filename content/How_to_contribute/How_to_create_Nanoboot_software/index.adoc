@@ -1,0 +1,314 @@
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
++++
+////
+
+= How to create Nanoboot software
+:toc:
+:toclevels: 4
+
+(Nanoboot software Standardization)
+
+This page describes, how to create Nanoboot software based on Nanoboot software standards
+
+
+== File LICENCE
+
+IMPORTANT: Every Nanoboot software contains file LICENCE in the root directory.
+
+Place text file named LICENCE into the root directory of the software Git repository.
+
+Insert LICENCE text from one of these:
+* https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+* https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
+ 
+=== Licence preamble
+
+==== Licence preamble in Java file
+
+===== GPL 2
+
+
+[source,txt]
+----
+///////////////////////////////////////////////////////////////////////////////////////////////
+// {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+// Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; version 2
+// of the License only.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+///////////////////////////////////////////////////////////////////////////////////////////////
+----
+[source,txt]
+
+===== LGPL 2.1
+
+[source,txt]
+----
+///////////////////////////////////////////////////////////////////////////////////////////////
+// {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+// Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+//
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation;
+// version 2.1 of the License only.
+//
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+///////////////////////////////////////////////////////////////////////////////////////////////
+----
+[source,txt]
+
+==== Licence preamble in XML file
+
+Note: Starts with:
+[source,txt]
+----
+<!-- and ends with -->
+----
+
+===== GPL 2
+
+[source,txt]
+----
+ {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+ Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; version 2
+ of the License only.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+----
+
+===== LGPL 2.1
+
+[source,txt]
+----
+ {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+ Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation;
+ version 2.1 of the License only.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+----
+
+
+
+== Example of pom.xml
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ nanoboot-java-template: A Java template repository.
+ Copyright (C) 2018-2022 the original author or authors.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; 
+ version 2.1 of the License only.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.nanoboot.common</groupId>
+        <artifactId>nanoboot-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.nanoboot.common</groupId>
+    <artifactId>nanoboot-java-template</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>nanoboot-java-template</name>
+    <description>nanoboot-java-template</description>
+
+    <properties>
+    <checkstyle.skip>true</checkstyle.skip><!-- TODO: make false-->
+    </properties>
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.nanoboot.nanobootjavatemplate.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <skip>${checkstyle.skip}</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <!-- Power dependencies -->
+
+        <!-- Other dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+----
+
+
+
+
+
+== Maven configuration - add this to pom.xml
+
+[source,xml]
+----
+
+    <repositories>
+        <repository>
+            <id>releases</id>
+            <name>nanoboot-releases-repository</name>
+            <url>https://maven.nanoboot.org/releases</url>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <name>nanoboot-snapshots-repository</name>
+            <url>https://maven.nanoboot.org/snapshots</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>releases</id>
+            <name>nanoboot-releases-repository</name>
+            <url>https://maven.nanoboot.org/releases</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots</id>
+            <name>nanoboot-snapshots-repository</name>
+            <url>https://maven.nanoboot.org/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nanoboot-releases-repository</id>
+            <url>https://maven.nanoboot.org/releases</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>nanoboot-snapshots-repository</id>
+            <url>https://maven.nanoboot.org/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+----
+
+== Place file .gitignore into the root of the repository
+
+[source,txt]
+----
+#files to ignore
+
+*.metadata/**
+*.recommenders/**
+*target/**
+*build/**
+*.idea/**
+*.class
+*.iml
+/target/
+}}}
+----
+
+== Place file CHANGELOG.md into the root of the repository
+== Place file ENVIRONMENT_STARTUP.md into the root of the repositor
+== Place file README.md into the root of the repository
+== File CREDITS (example)
+
+[source,txt]
+----
+	This file partially lists people, that have contributed to 
+	the "{SOFTWARE NAME}" project. They are sorted by name.
+	The fields are: name (N), e-mail (E), web-address (W), 
+	PGP key ID and fingerprint (P), description (D) and 
+	snail-mail address (S).
+	Thanks,
+
+			Vokac
+----------
+
+N: Robert Vokac
+E: robertvokac@nanoboot.org
+W: https://nanoboot.org
+P: 4096R/E3329055 322B D109 0AA8 C324 EA9C 72F5 693D 30BE E332 9055
+D: Founder
+S: Czech Republic
+
+----
+== File CONTRIBUTING.md
+== File CODEOWNERS
+
+

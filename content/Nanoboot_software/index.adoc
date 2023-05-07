@@ -1,0 +1,17 @@
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
++++
+////
+
+= Nanoboot software
+
+This site provides review of "Nanoboot" software with links to their documentation.
+
+CAUTION: Software documentation is now being migrated from "Wiki Moin Moin" to "Asciidoc".
+
+Software documentation now can be found here: https://wiki.nanoboot.org/Products
+

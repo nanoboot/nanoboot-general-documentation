@@ -1,0 +1,12 @@
+= General Nanoboot Documentation
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
++++
+////
+
+This site provides general documentation for "Nanoboot" project.
+
