@@ -1,0 +1,77 @@
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
++++
+////
+
+= Nanoboot projects
+
+This site provides review of "Nanoboot" projects.
+
+|===
+| Name | Group | Importance | Status | Description
+
+| Server Nanoboot | Nanoboot servers | HIGH | RUNNING | 
+| docs.nanoboot.org | Nanoboot servers | HIGH | RUNNING | 
+| bugzilla.nanoboot.org | Nanoboot servers | HIGH | RUNNING | 
+| maven.nanoboot.org | Nanoboot servers | HIGH | NOT YET STARTED | 
+| octagon.nanoboot.org | Nanoboot servers | MEDIUM | SLEEPING | 
+| encyclopedia.nanoboot.org | Nanoboot servers | MEDIUM | NOT YET STARTED | 
+| mail.nanoboot.org | Nanoboot servers | NONE | CANCELLED | 
+| forum.nanoboot.org | Nanoboot servers | LOWEST | NOT YET STARTED | 
+| Nanoboot Checks | Nanoboot products | LOW | PAUSED | 
+| Nanoboot Parent | Nanoboot products | MEDIUM | PAUSED | 
+| Power Core | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Text | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Random | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Utils | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Collections | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Json | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Time | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Log | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power IO | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Web | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Wiki | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Container | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Redmond | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Shark | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Sound | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Stat | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power SQL | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power DB | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Persistence | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power SVG | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power View | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power XML | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Reflection | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Mail | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Blockchain | Nanoboot products / Power Framework | LOW | STALLEN | 
+| Power Security | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Net | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Concurrency | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power English | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Java | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Math | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Console | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Ascii | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power Cash | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Power AI | Nanoboot products / Power Framework | LOW | NOT YET STARTED | 
+| Color Lines Archive | Color Shapes | HIGHEST | RUNNING | 
+| Color Shapes Engine | Color Shapes | HIGHEST | RUNNING | 
+| Color Shapes Desktop | Color Shapes | HIGHEST | STALLEN | 
+| Color Shapes Server | Color Shapes | HIGH | NOT YET STARTED | 
+| Color Shapes Client | Color Shapes | HIGH | NOT YET STARTED | 
+| Color Shapes Web | Color Shapes | HIGH | NOT YET STARTED | 
+| Color linez Desktop | Color Shapes | HIGHEST | NOT YET STARTED | 
+| Color linez Web | Color Shapes | HIGH | NOT YET STARTED | 
+| Circles | Color Shapes | MEDIUM | FINISHED | 
+| Octagon | Octagon | MEDIUM | SLEEPING | 
+| Simulife | Games | NONE | NOT YET STARTED | 
+| JBugzilla | Web apps | LOW | NOT_YET_STARTED | Bugzilla rewritten to Java 
+
+|===
+
+
