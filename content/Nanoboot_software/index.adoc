@@ -21,7 +21,7 @@ This site provides review of "Nanoboot" software with links to their documentati
 | Nanoboot Parent | nanoboot-parent | Essential | | | Maven parent for Nanoboot projects
 | Power Framework | power-framework  | Power framework | | | collection of multi-purpose Java libraries
 | Color Shapes Archive | color-shapes-archive  | Color Shapes | | | Java web app with the collection of Color Lines related websites and other materials
-| https://docs.nanoboot.org/octagon.docs[Color Shapes Engine] | color-shapes-engine  | Color Shapes | | | engine for game Color Shapes ("Color Lines" clone)
+| https://docs.nanoboot.org/color-shapes-engine.docs[Color Shapes Engine] | color-shapes-engine  | Color Shapes | | | engine for game Color Shapes ("Color Lines" clone)
 | Color Shapes Desktop | color-shapes-desktop  | Color Shapes | | | Color Shapes for desktop
 | Color Shapes Server | color-shapes-server  | Color Shapes | | | Color Shapes on server
 | Color Shapes Client | color-shapes-client  | Color Shapes | | | client for Color Shapes Server
