@@ -11,7 +11,34 @@ menu = "main"
 
 This site provides review of "Nanoboot" software with links to their documentation.
 
-CAUTION: Software documentation is now being migrated from "Wiki Moin Moin" to "Asciidoc".
 
-Software documentation now can be found here: https://wiki.nanoboot.org/Products
 
+|===
+| Name | Code | Group | Status | Resolution | Description
+
+| Nanoboot Web | nanoboot-web | Common | | | Website www.nanoboot.org
+| Nanoboot Checks | nanoboot-checks | Essential | | | Checkstyle rules encapsulated into a jar file
+| Nanoboot Parent | nanoboot-parent | Essential | | | Maven parent for Nanoboot projects
+| Power Framework | power-framework  | Power framework | | | collection of multi-purpose Java libraries
+| Color Shapes Archive | color-shapes-archive  | Color Shapes | | | Java web app with the collection of Color Lines related websites and other materials
+| https://docs.nanoboot.org/octagon.docs[Color Shapes Engine] | color-shapes-engine  | Color Shapes | | | engine for game Color Shapes ("Color Lines" clone)
+| Color Shapes Desktop | color-shapes-desktop  | Color Shapes | | | Color Shapes for desktop
+| Color Shapes Server | color-shapes-server  | Color Shapes | | | Color Shapes on server
+| Color Shapes Client | color-shapes-client  | Color Shapes | | | client for Color Shapes Server
+| Color Shapes Web | color-shapes-web  | Color Shapes | | | Color Shapes for web
+| Color linez Desktop | color-linez-desktop  | Color Shapes | | | Color linez reimplementation using Java and JavaFX
+| Color linez Web | color-linez-web  | Color Shapes | | | Color linez reimplementation using HTML, CSS and JavaScript
+| Circles | circles | Color Shapes | | | Clone of "Color Lines" written in C#
+| Octagon | octagon  | Octagon | | | multi-purpose management system
+| PasswordGenerator | password-generator | Tools | | |
+| Simulife | simulife | Simulife | | |
+| OctagonPluginPerson | octagon-plugin-person | Octagon | | |
+| OctagonPluginDevelopment | octagon-plugin-development | Octagon | | |
+| OctagonPluginTask | octagon-plugin-task | Octagon | | |
+| DB Migration | db-migration  | Tools | | | Versioning database schema
+| Nanodata | nanodata | Tools | | | Encyclopedia application
+| JBugzilla | jbugzilla | Ticket systems | | | reimplementation of Bugzilla written in Java
+|===
+
+
+TODO : password-generator : Password will be without the additional space
