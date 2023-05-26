@@ -1,0 +1,60 @@
+
+////
++++
+title = "Jenkins"
+date = "2023-05-23"
+menu = "main"
+weight=1000
++++
+////
+
+= Jenkins
+
+== Jenkins and Gitea integration
+
+TIP: More info at https://www.youtube.com/watch?v=NO3sZWRxgQM
+
+*In Gitea:*
+
+To the root of your Git repository in Gitea add the Jenkinsfile. Example:
+
+----
+pipeline {
+    agent any
+    stages {
+	stage('Hello') {
+	    steps {
+		echo 'Hello World from app'
+		sh '''
+			#!/bin/bash
+			ls -la
+			pwd
+           '''
+	    }
+	}
+    }
+}
+----
+
+Create user jenkins
+
+Add user jenkins as collaborator of this repository
+
+*In Jenkins:*
+
+* Install "Gitea Plugin" : Go to Manage Jenkins / Manage Plugins
+* Configure "Gitea Plugin"
+** Go to Manage Jenkins / Configure System
+** Scroll down to the "Gitea "section
+** Click on "Add"/"Gitea Server"
+*** Give it a Name, Server URL (of Gitea server)
+*** Enable "Manage hooks" and insert user and password of the Gitea user (jenkins/?) and click "Add"
+* Create organization
+** Click on "Create a job"
+*** Give it a name (usually the same, as is the name of the corresponding Gitea organization)
+*** Select "Organization Folder" and click on OK
+** Go to Repository Sources and click on Add and select "Gitea Organization"
+*** As for credentials, use that ones created few moments ago
+*** Branch names to build automatically=develop|master
+*** Owner=nanoboot (name of that Gitea organization)
+
