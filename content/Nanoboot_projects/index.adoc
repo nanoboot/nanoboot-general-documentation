@@ -44,7 +44,7 @@ Number for next new project: 88
 | 4 | docs.nanoboot.org | internet | MEDIUM | RUNNING | 
 | 5 | code.nanoboot.org | internet | HIGH | RUNNING | 
 | 6 | maven.nanoboot.org | internet | HIGH | RUNNING | 
-| 7 | ci | internet | HIGH | RUNNING | 
+| 7 | ci.nanoboot.org | internet | HIGH | RUNNING | 
 | 8 | files.nanoboot.org | internet | MEDIUM | RUNNING | 
 | 9 | forum.nanoboot.org | internet | LOW | RUNNING | 
 | 10 | nanodata.nanoboot.org | internet | HIGH | RUNNING | 
