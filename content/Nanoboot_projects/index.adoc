@@ -34,7 +34,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 
 
 
-Number for next new project: 88
+Number for next new project: 89
 |===
 | # | Name | Group | Importance | Status | Description
 
@@ -125,6 +125,7 @@ Number for next new project: 88
 | 84 | Asset Manager | products/tools | LOWEST | IN_PROGRESS | 
 | 85 | Simulife | games | MEDIUM | NOT YET STARTED | 
 | 86 | Fork of JForum | forks | LOWEST | NOT YET STARTED | 
+| 88 | Application Preferences Manager (APM) | tools | LOWEST | NOT YET STARTED | 
 |===
 
 
