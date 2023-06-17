@@ -14,110 +14,120 @@ This site provides help for various situations.
 
 == How to release new version of software (Java)
 
-WARNING: This section is under progress
+https://wyssmann.com/blog/2021/03/how-to-increment-versions-in-maven-builds-alternative-to-maven-release-plugin/
 
-Create file release.sh:
+=== 1. What is current snapshot version?
 
-[source,bash]
-----
-#! /bin/bash
+```
+#example:
+currentSnapshotVersion=1.2.3-SNAPSHOT
+```
 
-set -e
+=== 2. What is current release version?
 
-currentDir=`pwd`
+```
+#example:
+currentReleaseVersion=1.2.3
+```
 
-### Set, if needed:
-pomParentDir=.
+=== 3. What is next snapshot version?
 
-stepCount=13
+```
+#example:
+nextSnapshotVersion=1.3.0
+```
 
-fromStepCount="/"$stepCount
+=== 4. Deploy current snapshot to Maven repository
 
-echo "### Release of new version of a Maven artifact ###"
-
-
-read -p "Current version (to be released now, example: 1.2.3):" currentVersion
-echo "Current version=" $currentVersion
-
-read -p "Next version (example: 1.2.3):" nextVersion
-echo "Next version=" nextVersion
-
-echo Step : 1$fromStepCount : Deploy current snapshot to Maven repository
-cd $pomParentDir
+```
+git checkout develop
 mvn clean deploy&&echo "DONE"
-cd $currentDir
+```
 
-echo Step : 2$fromStepCount : Delete -SNAPSHOT- all occurences in poms
+=== 5. Change currentSnapshotVersion to currentReleaseVersion : Delete -SNAPSHOT- all occurences in poms
 
-echo "Note: replace " $currentVersion-SNAPSHOT" by " $currentVersion "in all occurrences for this artifact:"
-read -p "Have you deleted all the occurences (y/n)?" choice
-case "$choice" in
-  y|Y ) echo "yes"&&echo "DONE";;
-  n|N ) echo "no";;
-  * ) echo "invalid"&&exit;;
-esac
+```
+git checkout master
+git merge develop
+mvn build-helper:parse-version versions:set \
+ -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.incrementalVersion}
+mvn versions:commit
+```
 
-echo Step : 3$fromStepCount : Deploy released version to Maven repository
-cd $pomParentDir
-mvn clean deploy&&echo "DONE"
-cd $currentDir
+=== 6. Add the deletion to git
 
-echo Step : 4$fromStepCount : Add the deletion to git
+```
 git add .&&echo "DONE"
+```
 
+=== 7. Commit the released version to git
 
-echo Step : 5$fromStepCount : Commit the released version to git
-git commit -m "Released $currentVersion"&&echo "DONE"
+```
+git commit -m "Released $currentReleaseVersion"&&echo "DONE"
+```
 
+=== 8. Deploy released version to Maven repository
 
+```
+mvn clean deploy&&echo "DONE"
+```
+
+=== 9. Tag released version
+
+```
 #git tag -d 0.0.0
 #git push --delete origin 0.0.0
 
-echo Step : 6$fromStepCount : Tag released version
 #git tag -a $currentVersion -m "$currentVersion"&&echo "DONE"
-git tag $currentVersion&&echo "DONE"
+git tag $currentReleaseVersion&&echo "DONE"
+```
 
+=== 10. Push to git
 
-echo Step : 7$fromStepCount : Push to git
+```
 #git push -f origin HEAD;
 git push origin HEAD&&echo "DONE"
+```
 
+=== 11. Push new tag to git
 
-echo Step : 8$fromStepCount : Push new tag to git
-git push origin $currentVersion&&echo "DONE"
+```
+git push origin $currentReleaseVersion&&echo "DONE"
+```
 
-echo Step : 9$fromStepCount : Increase version and add -SNAPSHOST  \(example: 999.999.999-SNAPSHOT\)
-echo "Note: replace " $currentVersion " by " $nextVersion"-SNAPSHOT"
+=== 12. Increase version and add -SNAPSHOST  \(example: 999.999.999-SNAPSHOT\)
 
-read -p "Have you replaced all the occurrences (y/n)?" choice
-case "$choice" in
-  y|Y ) echo "yes"&&echo "DONE";;
-  n|N ) echo "no";;
-  * ) echo "invalid"&&exit;;
-esac
+```
+git checkout develop
+git merge master
+mvn build-helper:parse-version versions:set \
+-DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT
+mvn versions:commit
+```
 
-echo Step : 10$fromStepCount : Adding the changes to git
+=== 13. Adding the changes to git
+
+```
 git add .&&echo "DONE"
+```
 
-echo Step : 11$fromStepCount : Commit the new snapshot version to git
+=== 14. Commit the new snapshot version to git
 
-git commit -m "Released "$nextVersion"-SNAPSHOT"&&echo "DONE"
+```
+git commit -m "Released for the first time" "$nextSnapshotVersion"&&echo "DONE"
+```
 
-echo Step : 12$fromStepCount : Push to git
+=== 15. Push to git
+
+```
 git push origin HEAD&&echo "DONE"
+```
 
+=== 16. Deploy the new snapshot to Maven repository
 
-echo Step : 13$fromStepCount : Deploy the new snapshot to Maven repository
-cd $pomParentDir
+```
 mvn clean deploy&&echo "DONE"
-cd $currentDir
+```
 
-echo "RELEASE OF NEW VERSION $currentVersion WAS JUST FINISHED"
-
-echo "NOW UPDATE DATA IN OCTAGON."
-
-echo "EXITING SCRIPT"
-
-gitk --all
-----
+=== 17. Now the RELEASE OF NEW VERSION $currentReleaseVersion WAS JUST FINISHED"
 
