@@ -34,7 +34,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 
 
 
-Number for next new project: 89
+Number for next new project: 90
 |===
 | # | Name | Group | Importance | Status | Description
 
@@ -120,6 +120,7 @@ Number for next new project: 89
 | 80 | Octagon Plugin Graph | products/octagon | LOW | SLEEPING | 
 | 81 | Dog | products/tools | MEDIUM | SLEEPING | 
 | 87 | Bit Inspector | products/tools | LOW | NEW | 
+| 89 | Ftps | products/tools | LOW | PAUSED | 
 | 82 | Nanoboot General Documentation | documentation | LOW | SLEEPING | 
 | 83 | Nanoboot Infrastructure Documentation | infrastructure | LOW | SLEEPING | 
 | 84 | Asset Manager | products/tools | LOWEST | IN_PROGRESS | 
