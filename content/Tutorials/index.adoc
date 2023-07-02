@@ -76,7 +76,7 @@ mvn clean deploy&&echo "DONE"
 #git push --delete origin 0.0.0
 #git tag -a $currentReleaseVersion -m "$currentReleaseVersion"&&echo "DONE"
 
-git tag $currentReleaseVersion&&echo "DONE"
+git tag v$currentReleaseVersion&&echo "DONE"
 ```
 
 === 8. Push to git
@@ -90,7 +90,7 @@ git push origin HEAD&&echo "DONE"
 === 9. Push new tag to git
 
 ```
-git push origin $currentReleaseVersion&&echo "DONE"
+git push origin v$currentReleaseVersion&&echo "DONE"
 ```
 
 === 10. Increase version and add -SNAPSHOST  \(example: 999.999.999-SNAPSHOT\)
