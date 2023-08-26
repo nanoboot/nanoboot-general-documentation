@@ -34,7 +34,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 
 
 
-Number for next new project: 90
+Number for next new project: 91
 |===
 | # | Name | Group | Importance | Status | Description
 
@@ -58,6 +58,7 @@ Number for next new project: 90
 | 18 | ldap.nanoboot.org | internet | NONE | UNCONFIRMED | 
 | 19 | id.nanoboot.org | internet | NONE | UNCONFIRMED | 
 | 20 | blog.nanoboot.org | internet | NONE | UNCONFIRMED | 
+| 90 | archive.nanoboot.org | internet | NONE | UNCONFIRMED | 
 | 21 | Nanoboot mailing | internet | MEDIUM | RUNNING | 
 | 22 | Nanoboot Checks | products/essential | LOW | RUNNING | 
 | 23 | Nanoboot Parent | products/essential | MEDIUM | RUNNING | 
@@ -122,7 +123,7 @@ Number for next new project: 90
 | 87 | Bit Inspector | products/tools | LOW | NEW | 
 | 89 | Ftps | products/tools | LOW | PAUSED | 
 | 82 | Nanoboot General Documentation | documentation | LOW | SLEEPING | 
-| 83 | Nanoboot Infrastructure Documentation | infrastructure | LOW | SLEEPING | 
+| 83 | https://docs.nanoboot.org/nanoboot-infrastructure-documentation/latest/en-US/html/index.html[Nanoboot Infrastructure Documentation] | infrastructure | LOW | SLEEPING | 
 | 84 | Asset Manager | products/tools | LOWEST | IN_PROGRESS | 
 | 85 | Simulife | games | MEDIUM | NOT YET STARTED | 
 | 86 | Fork of JForum | forks | LOWEST | NOT YET STARTED | 
