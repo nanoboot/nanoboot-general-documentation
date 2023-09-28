@@ -34,7 +34,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 
 
 
-Number for next new project: 91
+Number for next new project: 92
 |===
 | # | Name | Group | Importance | Status | Description
 
@@ -125,6 +125,7 @@ Number for next new project: 91
 | 82 | Nanoboot General Documentation | documentation | LOW | SLEEPING | 
 | 83 | https://docs.nanoboot.org/nanoboot-infrastructure-documentation/latest/en-US/html/index.html[Nanoboot Infrastructure Documentation] | infrastructure | LOW | SLEEPING | 
 | 84 | Asset Manager | products/tools | LOWEST | IN_PROGRESS | 
+| 91 | Task Hero | products/tools | LOW | TODO | 
 | 85 | Simulife | games | MEDIUM | NOT YET STARTED | 
 | 86 | Fork of JForum | forks | LOWEST | NOT YET STARTED | 
 | 88 | Application Preferences Manager (APM) | tools | LOWEST | NOT YET STARTED | 
