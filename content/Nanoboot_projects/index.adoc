@@ -34,7 +34,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 
 
 
-Number for next new project: 93
+Number for next new project: 95
 |===
 | # | Name | Group | Importance | Status | Description
 
@@ -53,6 +53,8 @@ Number for next new project: 93
 | 13 | colorshapesarchive.test.nanoboot.org | internet | LOWEST | TODO | 
 | 14 | colorshapesserver.nanoboot.org | internet | LOW | BACKLOG | 
 | 15 | colorshapesserver.test.nanoboot.org | internet | LOWEST | BACKLOG | 
+| 93 | asset.nanoboot.org | internet | LOWEST | RUNNING | 
+| 94 | asset.test.nanoboot.org | internet | LOWEST | RUNNING | 
 | 16 | Nanoboot Github  mirror | internet | LOW | RUNNING | 
 | 17 | octagon.nanoboot.org | internet | NONE | HIBERNATED | 
 | 18 | ldap.nanoboot.org | internet | NONE | UNCONFIRMED | 
