@@ -38,7 +38,6 @@ This site provides review of "Nanoboot" software with links to their documentati
 | OctagonPluginTask | octagon-plugin-task | Octagon | | |
 | DB Migration | db-migration  | Tools | | | Versioning database schema
 | Nanodata | nanodata | Tools | | | Encyclopedia application
-| JBugzilla | jbugzilla | Ticket systems | | | reimplementation of Bugzilla written in Java
 |===
 
 
