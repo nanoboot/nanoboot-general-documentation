@@ -50,8 +50,8 @@ Reuse "73 JBugzilla"
 | 7 | ci.nanoboot.org | internet | HIGH | RUNNING | 
 | 8 | files.nanoboot.org | internet | MEDIUM | RUNNING | 
 | 9 | forum.nanoboot.org | internet | LOW | RUNNING | 
-| 10 | nanodata.nanoboot.org | internet | HIGH | RUNNING | 
-| 11 | nanodata.test.nanoboot.org | internet | LOWEST | RUNNING | 
+| 10 | directory.nanoboot.org | internet | HIGH | RUNNING | 
+| 11 | directory.test.nanoboot.org | internet | LOWEST | RUNNING | 
 | 12 | colorshapesarchive.nanoboot.org | internet | HIGHEST | RUNNING | 
 | 13 | colorshapesarchive.test.nanoboot.org | internet | LOWEST | TODO | 
 | 14 | colorshapesserver.nanoboot.org | internet | LOW | BACKLOG | 
