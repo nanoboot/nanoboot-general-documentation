@@ -1,0 +1,42 @@
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
+weight=700
++++
+////
+
+= Nanoboot infrastructure
+
+
+|===
+| Name | Group | Importance | Status | Description
+
+| Nanoboot VPS | infrastructure | HIGH | RUNNING | 
+| www.nanoboot.org | internet | MEDIUM | RUNNING | 
+| www.test.nanoboot.org | internet | LOWEST | RUNNING | 
+| docs.nanoboot.org | internet | MEDIUM | RUNNING | 
+| code.nanoboot.org | internet | HIGH | RUNNING | 
+| maven.nanoboot.org | internet | HIGH | RUNNING | 
+| ci.nanoboot.org | internet | HIGH | RUNNING | 
+| files.nanoboot.org | internet | MEDIUM | RUNNING | 
+| forum.nanoboot.org | internet | LOW | RUNNING | 
+| directory.nanoboot.org | internet | HIGH | RUNNING | 
+| directory.test.nanoboot.org | internet | LOWEST | RUNNING | 
+| colorshapesarchive.nanoboot.org | internet | HIGHEST | RUNNING | 
+| colorshapesarchive.test.nanoboot.org | internet | LOWEST | TODO | 
+| colorshapesserver.nanoboot.org | internet | LOW | BACKLOG | 
+| colorshapesserver.test.nanoboot.org | internet | LOWEST | BACKLOG | 
+| asset.nanoboot.org | internet | LOWEST | RUNNING | 
+| asset.test.nanoboot.org | internet | LOWEST | RUNNING | 
+| Nanoboot Github  mirror | internet | LOW | RUNNING | 
+| octagon.nanoboot.org | internet | NONE | HIBERNATED | 
+| ldap.nanoboot.org | internet | NONE | UNCONFIRMED | 
+| id.nanoboot.org | internet | NONE | UNCONFIRMED | 
+| blog.nanoboot.org | internet | NONE | UNCONFIRMED | 
+| archive.nanoboot.org | internet | NONE | UNCONFIRMED | 
+|===
+
+

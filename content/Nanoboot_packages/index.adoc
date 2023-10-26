@@ -1,0 +1,71 @@
+
+////
++++
+title = "About"
+date = "2023-05-07"
+menu = "main"
+weight=720
++++
+////
+
+= Nanoboot projects
+
+This site provides review of "Nanoboot" packages with links to their documentation and their status.
+
+* The goal of this is to give a clearer overview of different responsibilities at Nanoboot.
+
+If you feel like one project is not working the way you want,
+either consider joining the team,
+or discussing the matter in the (https://forum.nanoboot.org).
+
+Description of fields:
+
+* Status: [active, inactive] + [working, partly limitations, not working] explains if a project is active and making progress or not
+* Maintainers: How many (x/y determine that there might not be as many as wanted)? Enough?
+* Discussion: links to project communication hubs (mainly chats)
+* Limitations: Is there a restriction determining if you can help?
+* Stack: Which experiences could come handy?
+
+NOTE: Some of the infrastructure projects require certain access levels to Nanoboot's infrastructure.
+
+|===
+| Name | Category | Description | High Priority | Status
+
+| nanoboot-web | essential | Website www.nanoboot.org | | RUNNING 
+| nanoboot-checks | essential | Checkstyle rules encapsulated into a jar file | | RUNNING 
+| nanoboot-parent | essential | Maven parent for Nanoboot projects | | RUNNING 
+| power-framework | power | collection of multi-purpose Java libraries | | STALLEN 
+| circles | shapes | Clone of "Color Lines" written in C# | | IN_PROGRESS 
+| color-shapes-archive | shapes | Java web app with the collection of Color Lines related websites and other materials | YES | RUNNING 
+| https://docs.nanoboot.org/color-shapes-engine.docs[color-shapes-engine] | shapes | engine for game Color Shapes ("Color Lines" clone) | YES | RUNNING 
+| color-shapes-desktop | shapes | Color Shapes for desktop | YES | STALLEN 
+| color-shapes-server | shapes | Color Shapes on server | YES | NOT YET STARTED 
+| color-shapes-client | shapes | client for Color Shapes Server | YES | NOT YET STARTED 
+| color-shapes-web | shapes | Color Shapes for web | | NOT YET STARTED 
+| color-shapes-console | shapes | | | NOT YET STARTED 
+| color-linez-desktop | shapes | Color linez reimplementation using Java and JavaFX | YES | NOT YET STARTED 
+| color-linez-Web | shapes | Color linez reimplementation using HTML, CSS and JavaScript | | NOT YET STARTED 
+| password-generator | tools | | | SEPING 
+| DB Migration | tools | Versioning database schema | | SLEEPING 
+| Nanodata | tools | Encyclopedia application | YES | SLEEPING 
+| Octagon | octagon | multi-purpose management system | | SLEEPING 
+| octagon-plugin-Task | octagon | | | SLEEPING 
+| octagon-plugin-Person | octagon | | | SLEEPING 
+| octagon-plugin-Development | octagon | | | SLEEPING 
+| octagon-plugin-Devops | octagon | | | SLEEPING 
+| octagon-plugin-Encyclopedia | octagon | | | SLEEPING 
+| octagon-plugin-Graph | octagon | | | SLEEPING 
+| Dog | tools | | YES | SLEEPING 
+| Bit Inspector | tools | | | NEW 
+| Ftps | tools | | | PAUSED 
+| Nanoboot General Documentation | documentation | | | SLEEPING 
+| https://docs.nanoboot.org/nanoboot-infrastructure-documentation/latest/en-US/html/index.html[Nanoboot Infrastructure Documentation] | infrastructure | | | SLEEPING 
+| Asset Manager | tools | |  | IN_PROGRESS 
+| Nanotask | tools | | YES | TODO 
+| Fenix | tools | | | TODO 
+| Simulife | games | | | NOT YET STARTED 
+| Fork of JForum | forks | |  | NOT YET STARTED 
+| Application Preferences Manager (APM) | tools | |  | NOT YET STARTED 
+|===
+
+

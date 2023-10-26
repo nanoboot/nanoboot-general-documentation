@@ -1,0 +1,52 @@
+
+////
++++
+title = "9"
+date = "2023-05-26"
+menu = "main"
++++
+////
+
+= power-framework
+
+
+|===
+| Name | Category | Description | High Priority | Status
+
+| power-core | power | | | STALLEN 
+| power-text | power | | | STALLEN 
+| power-random | power | | | STALLEN 
+| power-utils | power | | | STALLEN 
+| power-collections | power | | | STALLEN 
+| power-json | power | | | STALLEN 
+| power-time | power | | | STALLEN 
+| power-log | power | | | STALLEN 
+| power-io | power | | | STALLEN 
+| power-web | power | | | STALLEN 
+| power-wiki | power | | | NOT YET STARTED 
+| power-container | power | | | NOT YET STARTED 
+| power-redmond | power | | | NOT YET STARTED 
+| power-shark | power | | | NOT YET STARTED 
+| power-sound | power | | | NOT YET STARTED 
+| power-stat | power | | | NOT YET STARTED 
+| power-sql | power | | | NOT YET STARTED 
+| power-db | power | | | NOT YET STARTED 
+| power-persistence | power | | | STALLEN 
+| power-svg | power | | | NOT YET STARTED 
+| power-view | power | | | STALLEN 
+| power-xml | power | | | STALLEN 
+| power-reflection | power | | | STALLEN 
+| power-mail | power | | | STALLEN 
+| power-blockchain | power | | | STALLEN 
+| power-security | power | | | NOT YET STARTED 
+| power-net | power | | | NOT YET STARTED 
+| power-concurrency | power | | | NOT YET STARTED 
+| power-english | power | | | NOT YET STARTED 
+| power-java | power | | | NOT YET STARTED 
+| power-math | power | | | NOT YET STARTED 
+| power-console | power | | | NOT YET STARTED 
+| power-ascii | power | | | NOT YET STARTED 
+| power-coin | power | | | NOT YET STARTED 
+| power-ai | power | | | NOT YET STARTED 
+| power-server | power | | | NOT YET STARTED 
+|===
