@@ -32,7 +32,7 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 | Name | Category | Description | High Priority | Status
 
 | nanoboot-web | essential | Website www.nanoboot.org | | RUNNING 
-| nanoboot-checks | essential | Checkstyle rules encapsulated into a jar file | | RUNNING 
+| nanoboot-javaformat-checkstyle | essential | Checkstyle rules encapsulated into a jar file | | RUNNING 
 | nanoboot-parent | essential | Maven parent for Nanoboot projects | | RUNNING 
 | power-framework | power | collection of multi-purpose Java libraries | | STALLEN 
 | circles | shapes | Clone of "Color Lines" written in C# | | IN_PROGRESS 
