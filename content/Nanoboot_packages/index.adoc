@@ -66,6 +66,8 @@ NOTE: Some of the infrastructure projects require certain access levels to Nanob
 | Simulife | games | | | NOT YET STARTED 
 | Fork of JForum | forks | |  | NOT YET STARTED 
 | Application Preferences Manager (APM) | tools | |  | NOT YET STARTED 
+| bit-backup | tools | |  | NOT YET STARTED 
+| time-calc | tools | |  | FINISHED
 |===
 
 
