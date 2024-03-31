@@ -40,9 +40,82 @@
 }
 
 
+#menu {
+    background: #3D3F4A;
+    border-left: 0px solid #4169E1;
+    border-right: 0px solid #4169E1;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0;
+    padding-left: 0px;
+    margin-left: 0;
+}
+
+#menu li {
+    display:inline-block;
+    border-left: 0px solid #4169E1;
+    border-right: 0px solid #4169E1;
+
+    /*
+    border-top:4px solid #4169E1;
+    border-bottom:4px solid #4169E1;
+    */
+    font-size:115%;
+
+    margin-left:0 !important;
+    margin-right:0 !important;
+
+}
+
+#menu li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color:white;
+    text-decoration:none;
+    font-weight: 550;
+    line-height: 45px;
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+
+.menu_li_current_item {
+}
+
+.menu_li_current_item a {
+    color: #ffff99 !important;
+    /*background: #27282C;*/
+}
+
+
+#menu li:hover {
+    background: #27282C;
+    color:yellow !important;
+}
+#menu li a:hover {
+    color: white;
+}
+
+#menu, #nanoboot_banner  {
+    font-family: Arial;
+}
+
+
 </style>
 
-<iframe src="https://www.nanoboot.org/menu.html" width="100%" height="100%" frameBorder="0"></iframe>
+        <!-- NANOBOOT HEADER AND MENU - START -->
+        <div id="nanoboot_banner"><a href="https://www.nanoboot.org/index.html" target="_parent">Nanoboot</a> Project | <a href="https://docs.nanoboot.org" style="text-transform:none;"><span style="color:blue;">Documentation</span></div>
+
+        <ul id="menu">
+            <li><a href="https://www.nanoboot.org/index.html" target="_parent" style="">Home</a></li>
+            <li><a href="https://www.nanoboot.org/about.html" target="_parent">About</a></li>
+
+            <li><a href="https://www.nanoboot.org/downloads.html" target="_parent">Downloads</a></li>
+            <li><a href="https://www.nanoboot.org/documentation.html" target="_parent">Documentation</a></li>
+            <li><a href="https://www.nanoboot.org/contribute.html" target="_parent">Contribute</a></li>
+            <li class="menu_li_current_item"><a href="https://www.nanoboot.org/links.html" target="_parent">Links</a></li>
+        </ul>
+        <!-- NANOBOOT HEADER AND MENU - END -->
         
-<div id="nanoboot_banner"><a href="https://docs.nanoboot.org" style="text-transform:none;"><span style="color:blue;">Documentation</span></a></div>
 
