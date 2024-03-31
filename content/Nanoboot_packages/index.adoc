@@ -28,5 +28,5 @@ Description of fields:
 
 NOTE: Some of the infrastructure projects require certain access levels to Nanoboot's infrastructure.
 
-List of packages is here: https://cloud.nanoboot.org/?view_file_with_id=5beebc1b-d338-45e0-a3db-7468a3806a98[Package]
+List of packages is here: https://cloud.nanoboot.org/?view=5beebc1b-d338-45e0-a3db-7468a3806a98[Package]
 
