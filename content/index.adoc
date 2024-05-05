@@ -1,4 +1,4 @@
-= General Nanoboot Documentation
+= Nanoboot Software
 
 ////
 +++
@@ -8,5 +8,10 @@ menu = "main"
 +++
 ////
 
-This site provides general documentation for "Nanoboot" project.
+This is list of links to documentation of Nanoboot software:
 
+|===
+| Name | URL
+
+| Color Shapes Engine | https://docs.nanoboot.org/color-shapes-engine.docs/latest/en-US/html/
+|===
